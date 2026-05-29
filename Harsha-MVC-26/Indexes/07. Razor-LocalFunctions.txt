@@ -1,0 +1,14 @@
+﻿1. Razor-LocalFunctions
+===============================
+
+@{
+
+	return_type method_name(arguments) {
+	
+		C# / html code goes here
+	
+	}
+
+}
+
+note: Local functions are callable within same view

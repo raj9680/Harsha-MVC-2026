@@ -1,0 +1,5 @@
+﻿1. SharedView: Shared views are places in shared folder in views folder. They are accessible from any controller, if the view is not present in the "Views\ControllersName" folder.
+
+Views
+	-Shared
+		-ViewName.csthml

@@ -1,0 +1,28 @@
+﻿1. Nested Layout Views: A layout view that has another layout view is called as 'nested layout view'
+
+
+
+      Layout = "LayoutView1.cshtml"                Layout="LayoutView2.cshtml"
+View ===============================> LayoutView1 ===========================> LayoutView2
+
+
+
+
+
+_MasterLayout.cshtml
+============
+
+@RenderBody();
+
+
+
+
+
+_Layout.cshtml
+==============
+
+@{
+
+    Layout = "_MasterLayout.cshtml";
+
+}

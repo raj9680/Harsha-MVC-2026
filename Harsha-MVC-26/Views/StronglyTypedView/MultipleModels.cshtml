@@ -1,0 +1,20 @@
+﻿@model PersonAndProductWrapper
+
+<html>
+<head>
+    <title>ASP NET Core</title>
+</head>
+
+<body>
+    <h2>Strongly Typed Views with Multiple Models Example</h2>
+    
+    @*Data from Person Model*@
+    <p>@Model.PersonData?.Name
+        <span><a href="/person-details/@Model.PersonData?.Name">View</a></span>
+    </p>
+
+    @*Data from Product Model*@
+    <p>@Model.ProductData?.ProductName</p>
+
+</body>
+</html>

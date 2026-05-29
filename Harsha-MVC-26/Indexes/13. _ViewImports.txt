@@ -1,0 +1,13 @@
+﻿1. _ViewImports: It is a special file in the Views folder or its subfolder, which executes 
+automatically before execution of a view. 
+It is mainly used to import common namespaces that are to be imported in a View.
+
+--------
+
+Hierarchy:
+
+
+1. _ViewImports.cshtml: Statements in this file gets copied in all the views
+2. _ViewStart.cshtml: 
+3. View.cshtml
+4. LayoutView.cshtml

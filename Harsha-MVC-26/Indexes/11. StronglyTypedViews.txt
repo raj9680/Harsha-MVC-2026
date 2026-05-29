@@ -1,0 +1,37 @@
+﻿1. Strongly Typed Views: Strongly typed view is a view that is bound to a specific model 
+   class. It is mainly used to access the model object / model collection easily in the 
+   view
+
+Controller:
+-----------
+
+public IActionResult Index()
+{
+    ViewData["PageTitle"] = "Asp Net Core";
+    List<Person> persons = new List<Person>()
+    {
+        new Person() { Name = "Raj", DateOfBirth = DateTime.Now, PersonGender= Gender.Male },
+        new Person() { Name = "Kumar", DateOfBirth = DateTime.Now, PersonGender= Gender.Female },
+        new Person() { Name = "Rai", DateOfBirth = DateTime.Now, PersonGender= Gender.Male },
+    };
+    return View(persons);
+}
+
+
+View:
+-----
+
+@using Harsha_MVC_26.Models
+@model IEnumerable<Person>
+
+<html>
+    <head>
+        <title>@ViewBag.PageTitle</title>
+    </head>
+    <body>
+    @foreach(Person item in Model)
+    {
+        <p>@item.Name</p>
+    }
+</body>
+</html>

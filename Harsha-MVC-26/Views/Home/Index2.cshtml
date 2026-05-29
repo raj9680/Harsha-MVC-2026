@@ -1,0 +1,26 @@
+﻿@{
+    List<Person>? persons = (List<Person>?)ViewData["person"];
+}
+
+<html>
+    <head>
+    <title>@ViewBag.PageTitle</title>
+    </head>
+    <body>
+        @{
+            string alertScript = $"<script>alert('{persons.Count} people found')</script>";
+        }
+
+        @Html.Raw(alertScript)
+        <br />
+        @foreach (var item in persons) // ViewData
+        {
+            <p>@item.Name</p>
+        }
+
+        @foreach (Person item in ViewBag.person) // ViewBag
+        {
+            <p>@item.Name</p>
+        }
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿1. _ViewStart: It gets executed before execution of the view & used to specificy the common layout views in the same folder. 

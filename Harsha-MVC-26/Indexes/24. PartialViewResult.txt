@@ -1,0 +1,61 @@
+﻿1. ViewComponent: View Component is a combination of class (derived from Microsoft.AspNetCore.ViewComponent) that supplied data, and a partial view to render that time.
+
+
+1. Controller:
+------------
+
+[Route("partial-view-result")]
+public IActionResult Index()
+{
+    ListModel listModel = new ListModel()
+    {
+        ListTitle = "Programming Languages",
+        ListItems = new List<string>()
+        {
+            "C#",
+            "C++",
+            "Java",
+            "Python"
+        }
+    };
+
+    return PartialView("_ListPartialView", listModel);
+    // This will go to _ListPartialView and set its model value to 'listModel'
+}
+
+
+2. _ListPartialView
+-----------------
+
+@model ListModel
+
+<div class="list-container">
+    <h3>@Model.ListTitle</h3>
+    <ul class="list">
+        @foreach (var item in Model.ListItems)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</div> 
+
+
+
+3. Trigger - any.cshtml
+------------------------
+
+<button class="button blue-back" type="button" id="button-load">
+    Load Programming Languages
+</button>
+
+<div class="box programming-languages-content"></div>
+
+<script>
+
+    document.querySelector("#button-load").addEventListener("click", async function () {
+        var response = await fetch("partial-view-result");
+        var languages = await response.text();
+        document.querySelector(".programming-languages-content").innerHTML = languages;
+    });
+
+</script>

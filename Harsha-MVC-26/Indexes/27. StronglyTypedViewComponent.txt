@@ -1,0 +1,96 @@
+﻿1. StronglyTypedViewComponent: A ViewComponent class which is strongly bound to a specified model class.
+
+
+
+1. Model
+---------
+
+public class Person
+{
+    public string? Name { get; set; }
+    public DateTime? DateOfBirth { get; set; }
+    public Gender PersonGender { get; set; }
+
+}
+
+public enum Gender
+{
+    Male, Female
+}
+
+
+// For View Component with ViewData
+public class PersonGrid
+{
+    public string? GridTitle { get; set; } = "";
+    public List<Person> Persons { get; set; } = new List<Person>();
+}
+
+
+
+2. GridWithViewDataViewComponent:
+----------------------------------
+
+public class GridWithViewDataViewComponent: ViewComponent
+{
+    public async Task<IViewComponentResult> InvokeAsync()
+    {
+        PersonGrid personGrid = new PersonGrid()
+        {
+            GridTitle = "Employees",
+            Persons = new List<Person>()
+            {
+                new Person() { Name = "Raj", DateOfBirth = DateTime.Now, PersonGender= Gender.Male },
+                new Person() {Name = "Kumar", DateOfBirth = DateTime.UtcNow, PersonGender = Gender.Female},
+                new Person() {Name = "Rai", DateOfBirth = DateTime.Now, PersonGender = Gender.Male }
+            }
+        };
+
+        return View("GridWithViewData", personGrid);
+    }
+}
+
+
+
+2. GridWithViewDataViewComponent.cshtml
+-----------------------------------------
+
+@model PersonGrid
+
+<div class="box">
+    <h3>@Model.GridTitle</h3>
+    <table class="table w-100">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>D.O.B</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Persons)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.DateOfBirth</td>
+                    <td>@item.PersonGender</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+3. About.cshtml
+------------------------
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Harsha_MVC_26
+
+
+@await Component.InvokeAsync("GridWithViewDataViewComponent")
+
+// OR
+
+<vc:GridWithViewData></vc:GridWithViewData>

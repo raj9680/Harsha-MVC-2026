@@ -1,0 +1,17 @@
+﻿1. Code Blocks and Expressions
+===============================
+
+Razor Code Block
+@{
+	C# html code here
+}
+
+
+
+@Expression
+
+--or--
+
+@(Expression)
+
+ex: Index.cshtml

@@ -1,0 +1,26 @@
+﻿1. DynamicLayoutView: Executing Layout Views based on condition.
+
+
+Controller:
+
+[Route("home")]
+public IActionResult Method(int? productID) 
+{
+	ViewBag.ProductID = productID;
+}
+
+
+_Layout.cshtml
+
+@{
+
+	if(ViewBag.ProductID != null)
+	{
+		Layout = "_Layout.cshtml";
+	}
+	else 
+	{
+		Layout = "_ProductLayout.cshtml";
+	}
+
+}

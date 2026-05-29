@@ -1,0 +1,114 @@
+﻿1. ViewComponentWithParameter: We can supply One or more parameters to the view 
+component class. The parameteres are received by InvokeAsync method of the view 
+component class. All the parameters of view component are mandatory (must supply a 
+value)
+
+
+Syntax Step 1:
+Parent View-
+
+@await Component.InvokeAsync("ViewComponentName", new { param1 = value1, param2 = value2, ... });
+
+
+Syntax Step 2:
+View Component Class-
+
+InvokeAsync(datatype param1, datatype param2, ...)
+{
+    ....
+}
+
+
+
+
+1. Model
+---------
+
+public class Person
+{
+    public string? Name { get; set; }
+    public DateTime? DateOfBirth { get; set; }
+    public Gender PersonGender { get; set; }
+
+}
+
+public enum Gender
+{
+    Male, Female
+}
+
+
+// For View Component with ViewData
+public class PersonGrid
+{
+    public string? GridTitle { get; set; } = "";
+    public List<Person> Persons { get; set; } = new List<Person>();
+}
+
+
+
+2. About.cshtml
+------------------------
+
+<h3 class="text-green">View Component with Parameteres</h3>
+@{
+    PersonGrid personGridModel = new PersonGrid()
+    {
+        GridTitle = "Persons",
+        Persons = new List<Person>()
+        {
+        new Person() { Name = "Raj", DateOfBirth = DateTime.Now, PersonGender = Gender.Male },
+        new Person() { Name = "Kumar", DateOfBirth = DateTime.Now, PersonGender = Gender.Female },
+        new Person() { Name = "Rai", DateOfBirth = DateTime.Now, PersonGender = Gender.Male }
+        }
+    };
+}
+@await Component.InvokeAsync("Parameters", new
+{
+    grid = personGridModel
+})
+
+
+
+
+3. ParametersViewComponent.cs:
+-------------------------------
+
+public class ParametersViewComponent: ViewComponent
+{
+    public async Task<IViewComponentResult> InvokeAsync(PersonGrid grid)
+    {
+        return View("Parameters", grid);
+    }
+}
+
+
+
+
+4. Parameters.cshtml
+-----------------------------------------
+
+@model PersonGrid
+
+<div class="box">
+    <h3>@Model.GridTitle</h3>
+    <table class="table w-100">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>D.O.B</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Persons)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.DateOfBirth</td>
+                    <td>@item.PersonGender</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

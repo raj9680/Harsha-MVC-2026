@@ -1,0 +1,8 @@
+﻿1. Razor-for
+===============================
+
+@for(int i = 0; i<=5; i++) {
+
+	C# / html goes here; break;
+
+}

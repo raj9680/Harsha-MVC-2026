@@ -1,0 +1,7 @@
+﻿1. Razor-foreach
+===============================
+
+@foreach(var item in collections)
+{
+	C# / html goes here
+}

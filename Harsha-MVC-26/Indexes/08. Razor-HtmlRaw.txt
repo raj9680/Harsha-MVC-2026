@@ -1,0 +1,10 @@
+﻿1. Razor-Html.Raw()
+===============================
+
+@{
+
+	string variable = "html code";
+
+}
+
+@Html.Raw(variable) // prints html markup without encoding (converting html tags into plain text)

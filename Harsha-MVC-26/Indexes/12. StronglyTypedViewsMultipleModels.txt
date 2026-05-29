@@ -1,0 +1,75 @@
+﻿1. Strongly Typed Views Multiple Models: Strongly Typed Views can be bound to a single 
+   model directly. But that model class can have reference to objects of other model 
+   classes.
+
+ 
+Model:
+------
+
+public class Product
+{
+    public int ProductId { get; set; }
+    public string? ProductName { get; set; }
+}
+
+public class PersonAndProductWrapper
+{
+    public Person? PersonData { get; set; }
+    public Product? ProductData { get; set; }
+}
+
+
+
+Controler:
+----------
+
+public IActionResult MultipleModels()
+{
+    Person person = new Person()
+    {
+        Name = "Kumar",
+        DateOfBirth = DateTime.Now,
+        PersonGender = Gender.Female
+    };
+
+    Product product = new Product()
+    {
+        ProductId = 1,
+        ProductName = "Soap"
+    };
+
+    PersonAndProductWrapper personProductWrapper = new PersonAndProductWrapper()
+    {
+        PersonData = person,
+        ProductData = product,
+    };
+
+    // contains info of two models
+    return View(personProductWrapper);
+}
+
+
+Html:
+-----
+
+@using Harsha_MVC_26.Models
+@model PersonAndProductWrapper
+
+<html>
+<head>
+    <title>ASP NET Core</title>
+</head>
+
+<body>
+    <h2>Strongly Typed Views with Multiple Models Example</h2>
+    
+    @*Data from Person Model*@
+    <p>@Model.PersonData?.Name
+        <span><a href="/person-details/@Model.PersonData?.Name">View</a></span>
+    </p>
+
+    @*Data from Product Model*@
+    <p>@Model.ProductData?.ProductName</p>
+
+</body>
+</html>

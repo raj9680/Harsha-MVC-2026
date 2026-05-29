@@ -1,0 +1,78 @@
+﻿@{
+string appTitle = "ASP.NET Demo App";
+Person person = new Person() 
+{ 
+    Name = "Raj Kumar", 
+    DateOfBirth = Convert.ToDateTime("2000-06-01") 
+};
+person.PersonGender = Gender.Male;
+
+List<Person> persons = new List<Person>()
+{
+    new Person(){ Name = "Raj", DateOfBirth= DateTime.UtcNow, PersonGender = Gender.Male },
+    new Person(){ Name = "Kumar", DateOfBirth= DateTime.UtcNow, PersonGender = Gender.Female },
+    new Person(){ Name = "Rai", DateOfBirth= DateTime.UtcNow, PersonGender = Gender.Male }
+};
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@appTitle</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <div class="razor-if">
+        @if(person.Name != null)
+        {
+            <p><strong>Person Name: </strong>@person.Name</p>
+        }
+        <p><strong>Person Age: </strong>@person.DateOfBirth</p>
+    </div>
+
+
+    <div class="razor-switch">
+        @switch (person.PersonGender)
+        {
+            case Gender.Male:
+                <p>Gender is Male</p>;
+                break;
+
+            case Gender.Female:
+                <p>Gender is Female</p>;
+                break;
+        }
+    </div>
+
+    <div classaction="razor-persons">
+        @foreach (var value in persons)
+        {
+        <small>@value.Name</small><br />
+        }
+    </div>
+
+    <div class="razor-for">
+        @for(int i=0; i<persons.Count; i++)
+        {
+            <p>@persons[i].PersonGender</p>
+        }
+    </div>
+
+    <div class="razor-local-functions">
+        @{
+            double? GetAge(DateTime? dateOfBirth)
+            {
+                if(dateOfBirth is not null)
+                {
+                    return Math.Round((DateTime.Now - dateOfBirth.Value).TotalDays / 365.25);
+                } 
+                return null;
+            }
+        }
+        <p>Age of Person: @GetAge(person.DateOfBirth)</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Person>
+
+<html>
+    <head>
+        <title>@ViewBag.PageTitle</title>
+    </head>
+    <body>
+    @foreach(Person item in Model)
+    {
+        <p>@item.Name <span><a href="/person-details/@item.Name">View</a></span></p>
+    }
+
+    <p>Strongly Typed Views with Multiple Models Example:</p>
+    <p><a href="/multiple-models">Click here</a></p>
+</body>
+</html>

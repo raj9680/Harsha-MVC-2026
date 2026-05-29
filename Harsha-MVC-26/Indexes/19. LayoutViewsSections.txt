@@ -1,0 +1,21 @@
+﻿1. LayoutViewsSections: Section defines the content in the view, to be rendered in a specific place in the layout view.
+
+Sections can be rendered as optional, by using required: false parameter.
+
+
+
+About.cshtml
+============
+
+@section footer_section
+{
+    <p>Contact Support: 9888777666</p>
+}
+
+
+_Layout.cshtml
+==============
+
+<div class="footer-content">
+    @RenderSection("footer_section", false)
+</div>

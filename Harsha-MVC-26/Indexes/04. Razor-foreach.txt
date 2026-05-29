@@ -1,0 +1,11 @@
+﻿1. Razor-swich
+===============================
+
+@switch(variable) {
+
+	case value1: C# / html goes here; break;
+
+	case value2: C# / html goes here; break;
+
+	default: C# / html goes here; break;
+}

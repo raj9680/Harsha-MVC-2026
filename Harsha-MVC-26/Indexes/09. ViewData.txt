@@ -1,0 +1,41 @@
+﻿1. ViewData: ViewData is a dictionary object that is automatically created up on receiving  a request and will be automatically deleted before sending response to the client. It is mainly used to send data from controller to view.
+
+Note: Type Casting is must in case of ViewData
+===========================================================================================
+
+
+1. Controller:
+
+[Route("/")]
+public IActionResult Index2()
+{
+    ViewData["PageTitle"] = "Asp Net Core";
+    List<Person> persons = new List<Person>()
+    {
+        new Person() { Name = "Raj", DateOfBirth = DateTime.Now },
+        new Person() { Name = "Kumar", DateOfBirth = DateTime.Now },
+        new Person() { Name = "Rai", DateOfBirth = DateTime.Now }
+    };
+    ViewData["persons"] = persons;
+    return View();
+}
+
+
+
+2. View
+
+@{
+    List<Person>? persons = (List<Person>?)ViewData["persons"];
+}
+
+<html>
+    <head>
+    <title>@ViewData["PageTitle"]</title>
+    </head>
+    <body>
+        @foreach(var item in persons)
+        {
+            <p>@item.Name</p>
+        }
+</body>
+</html>

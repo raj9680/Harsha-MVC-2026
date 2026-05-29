@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "bIEo+pM4MFBfFsNevkVas87QQh4cvQAsr7GtelLv6Yo=",
+  "Source": "Harsha-MVC-26",
+  "BasePath": "_content/Harsha-MVC-26",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Harsha-MVC-26\\wwwroot",
+      "Source": "Harsha-MVC-26",
+      "ContentRoot": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Harsha-MVC-26\\wwwroot\\",
+      "BasePath": "_content/Harsha-MVC-26",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Harsha-MVC-26\\wwwroot\\StyleSheet.css",
+      "SourceId": "Harsha-MVC-26",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Harsha-MVC-26\\wwwroot\\",
+      "BasePath": "_content/Harsha-MVC-26",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

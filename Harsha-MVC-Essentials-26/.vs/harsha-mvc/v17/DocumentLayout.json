@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{743F9BBF-75C9-42A7-8D38-E3EF9C2A0D8D}|harsha-mvc.csproj|c:\\users\\raj.kumar\\desktop\\harsha-mvc-26\\customvalidators\\daterangevalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743F9BBF-75C9-42A7-8D38-E3EF9C2A0D8D}|harsha-mvc.csproj|solutionrelative:customvalidators\\daterangevalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743F9BBF-75C9-42A7-8D38-E3EF9C2A0D8D}|harsha-mvc.csproj|c:\\users\\raj.kumar\\desktop\\harsha-mvc-26\\controllers\\13. customvalidationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743F9BBF-75C9-42A7-8D38-E3EF9C2A0D8D}|harsha-mvc.csproj|solutionrelative:controllers\\13. customvalidationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743F9BBF-75C9-42A7-8D38-E3EF9C2A0D8D}|harsha-mvc.csproj|c:\\users\\raj.kumar\\desktop\\harsha-mvc-26\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743F9BBF-75C9-42A7-8D38-E3EF9C2A0D8D}|harsha-mvc.csproj|solutionrelative:models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DateRangeValidatorAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\CustomValidators\\DateRangeValidatorAttribute.cs",
+              "RelativeDocumentMoniker": "CustomValidators\\DateRangeValidatorAttribute.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\CustomValidators\\DateRangeValidatorAttribute.cs",
+              "RelativeToolTip": "CustomValidators\\DateRangeValidatorAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:11:37.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "Models\\Person.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\Models\\Person.cs",
+              "RelativeToolTip": "Models\\Person.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAswDEAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T11:13:49.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "13. CustomValidationController.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\Controllers\\13. CustomValidationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\13. CustomValidationController.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Desktop\\Harsha-MVC-26\\Controllers\\13. CustomValidationController.cs",
+              "RelativeToolTip": "Controllers\\13. CustomValidationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T10:53:21.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

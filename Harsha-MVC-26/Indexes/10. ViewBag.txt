@@ -1,0 +1,43 @@
+﻿1. ViewBag: ViewBag is a property of controller and view , that is used to access the ViewData easily.
+
+Note: Type Casting is automatic on ViewBag better than ViewData.
+Benefits of ViewBag over ViewData:
+1. ViewBag's syntax is easier to access its properties than ViewData.
+Eg: ViewBag.property    [vs]    ViewData["key"]
+
+2. You need NOT type caste the values while reading it.
+Eg: ViewBag.object_name.property [vs] (ViewData["key"] as ClassName).Property
+===========================================================================================
+
+
+1. Controller:
+
+[Route("/")]
+public IActionResult Index2()
+{
+    ViewData["PageTitle"] = "Asp Net Core";
+    List<Person> persons = new List<Person>()
+    {
+        new Person() { Name = "Raj", DateOfBirth = DateTime.Now },
+        new Person() { Name = "Kumar", DateOfBirth = DateTime.Now },
+        new Person() { Name = "Rai", DateOfBirth = DateTime.Now }
+    };
+    ViewData["persons"] = persons;
+    return View();
+}
+
+
+
+2. View
+
+<html>
+<head>
+<title>@ViewBag.PageTitle</title>
+</head>
+<body>
+    @foreach(var item in ViewBag.persons)
+    {
+        <p>@item.Name</p>
+    }
+</body>
+</html>

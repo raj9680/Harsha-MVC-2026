@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Harsha-MVC-Essentials-26.props" />
+</Project>

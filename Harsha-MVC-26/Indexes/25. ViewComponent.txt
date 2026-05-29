@@ -1,0 +1,64 @@
+﻿1. ViewComponent: A View Component is used to create reusable UI components along with server-side processing logic.
+It is useful for rendering dynamic and independent sections of a page such as navigation menus, sidebars, latest posts, shopping carts, etc.
+
+Unlike Partial Views, View Components can contain business logic and interact with models or services before rendering the view.
+
+Note:
+1. ViewComponent renders a chunk rather than a whole response.
+
+
+1. GridViewComponent:
+----------------------
+
+public class GridViewComponent: ViewComponent
+    {
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+
+            return View();
+            //return View("DifferentViewName");
+            // here view is partial view , location should Views/Shared/Components/Grid/Default.cshtml
+        }
+    }
+
+
+
+2. Default.cshtml
+-----------------
+
+<div class="box">
+    <h3>Grid</h3>
+    <table class="table w-100">
+        <thead>
+            <tr>
+                <th>S no.</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>One</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Two</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+3. About.cshtml
+------------------------
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Harsha_MVC_26
+
+
+@await Component.InvokeAsync("Grid")
+
+// OR
+
+<vc:grid></vc:grid>

@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "About - Asp Net Core";
+}
+
+<h1>About</h1>
+
+@*VC 1: View Component*@
+<h3 class="text-green">View Component</h3>
+@await Component.InvokeAsync("Grid")
+@* <vc:grid></vc:grid> *@
+
+
+
+
+
+
+@*VC 2: View Component with ViewData*@
+<h3 class="text-green">View Component with ViewData</h3>
+@await Component.InvokeAsync("GridWithViewData")
+
+
+
+
+
+
+@*VC 3: View Component with Parameteres*@
+<h3 class="text-green">View Component with Parameteres</h3>
+@{
+    PersonGrid personGridModel = new PersonGrid()
+    {
+        GridTitle = "Persons",
+        Persons = new List<Person>()
+        {
+        new Person() { Name = "Raj", DateOfBirth = DateTime.Now, PersonGender = Gender.Male },
+        new Person() { Name = "Kumar", DateOfBirth = DateTime.Now, PersonGender = Gender.Female },
+        new Person() { Name = "Rai", DateOfBirth = DateTime.Now, PersonGender = Gender.Male }
+        }
+    };
+}
+@await Component.InvokeAsync("Parameters", new
+{
+    grid = personGridModel
+})
+
+@* <vc:parameters grid="personGridModel" ></vc:parameters> *@
+
+
+
+
+
+@*VC 4: View Component Result - Async*@
+<h3 class="text-green">View Component Result - Async</h3>
+<button class="button blue-back" type="button" id="button-load" style="padding:10px; margin-left:20px">
+    Load Persons
+</button>
+
+<div class="box persons-result"></div>
+
+<script>
+
+    document.querySelector("#button-load").addEventListener("click", async function () {
+        var response = await fetch("view-component-result", {method: "GET"});
+        var languages = await response.text();
+        document.querySelector(".persons-result").innerHTML = languages;
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+@section footer_section
+{
+    <p>Contact Support: 9888777666</p>
+    <script src="/abc.js"></script>
+}

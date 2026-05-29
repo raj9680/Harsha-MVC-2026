@@ -1,0 +1,14 @@
+﻿1. Razor-Literal
+===============================
+
+@{
+
+	@:static text
+
+}
+
+
+OR
+
+
+<text>static text</text>

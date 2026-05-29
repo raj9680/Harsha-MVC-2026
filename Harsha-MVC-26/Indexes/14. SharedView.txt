@@ -1,0 +1,2 @@
+﻿1. LayoutViews: Layout views is a web page that is responsible for containing presentation logic template - commonly the html template with header, sidebar, footer etc.
+

@@ -1,0 +1,36 @@
+﻿1. PartialViews: Partial view is a razor markup file (.cshtml) that can be invoked individually from the controller; but can be invoked from any view within the same web application.
+
+
+Index.cshtml
+-------------
+
+<div class="box">
+    @*Way One: Returns the content to the parent view*@
+    <partial name="_ListPartialView"></partial>
+
+    @*Way Two: Returns the content to the parent view*@
+    @await Html.PartialAsync("_ListPartialView")
+
+    @*Way Three: Streams the content to the browser*@
+    @{
+        await Html.RenderPartialAsync("_ListPartialView");
+    }
+</div>
+
+
+
+
+
+_ListPartialView.cshtml
+------------------------
+
+<div class="list-container">
+    <h3>Cities</h3>
+    <ul class="list">
+        <li>London</li>
+        <li>Paris</li>
+        <li>New York</li>
+        <li>Tokyo</li>
+        <li>Rome</li>
+    </ul>
+</div>

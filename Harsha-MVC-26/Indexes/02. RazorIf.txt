@@ -1,0 +1,23 @@
+﻿1. Razor-If
+===============================
+
+@if(condition) {
+
+	C# / html code here
+
+}
+
+
+
+2. Razor - if...else
+===============================
+
+@if(condition) {
+
+	C# / html code here
+
+} else {
+
+	C# / html code here
+
+}
