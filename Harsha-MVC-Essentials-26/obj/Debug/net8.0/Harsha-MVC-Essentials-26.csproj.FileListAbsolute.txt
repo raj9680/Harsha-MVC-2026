@@ -37,6 +37,7 @@ C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\De
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\Harsha-MVC-Essentials-26.AssemblyInfo.cs
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\Harsha-MVC-Essentials-26.csproj.CoreCompileInputs.cache
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\Harsha-MVC-Essentials-26.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\Harsha-MVC-Essentials-26.sourcelink.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-Essentials-26\obj\Debug\net8.0\staticwebassets\msbuild.Harsha-MVC-Essentials-26.Microsoft.AspNetCore.StaticWebAssets.props

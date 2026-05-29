@@ -70,6 +70,7 @@ C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\Harsha-MVC-26.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\Harsha-MVC-26.RazorAssemblyInfo.cache
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\Harsha-MVC-26.RazorAssemblyInfo.cs
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\Harsha-MVC-26.sourcelink.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Harsha-MVC-26\obj\Debug\net8.0\staticwebassets\msbuild.Harsha-MVC-26.Microsoft.AspNetCore.StaticWebAssets.props
