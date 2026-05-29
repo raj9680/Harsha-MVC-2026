@@ -1,0 +1,10 @@
+﻿1. Services: Service is class that contains business logic such as business calculations, business validations that are specific to the domain of the client's business.
+
+2. Service is an abstraction layer (middle layer) between presentation layer (or application layer) and data layer.
+
+3. It makes the business logic separated from presentation layer and data layer.
+
+4. It makes the business logic to be unit testable easily.
+
+5. Will be invoked by controller.
+

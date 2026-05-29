@@ -1,0 +1,17 @@
+﻿Service Lifetime in DI: It indicates when a new object of the service has to be created 
+by the IOC/DI Container.
+
+
+1. Transient: Per Injection ie. wherever we injected the service the new independent 
+objects is created for every injection.
+Service instances are disposed at the end of the scope (usually a browser request).
+
+
+2. Scoped: Per scope (browser request) ie. a new object is created on each browser 
+request. 
+Service instances are disposed at the end of the scope (usually a browser request).
+
+
+3. Singleton: For entire application lifetime ie. same object will be used for entire 
+application lifetime.
+Service instances are disposed at application shutdown.

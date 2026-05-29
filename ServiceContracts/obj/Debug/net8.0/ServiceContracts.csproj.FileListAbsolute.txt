@@ -1,0 +1,12 @@
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\bin\Debug\net8.0\ServiceContracts.deps.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\bin\Debug\net8.0\ServiceContracts.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\bin\Debug\net8.0\ServiceContracts.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.AssemblyInfoInputs.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.AssemblyInfo.cs
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.sourcelink.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\refint\ServiceContracts.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ServiceContracts.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\ServiceContracts\obj\Debug\net8.0\ref\ServiceContracts.dll

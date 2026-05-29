@@ -1,0 +1,4 @@
+﻿1. Inversion Of Control: Inversion of control (IOC) is a design pattern (reusable solution for a common problem), which suggests "IOC container" for implementation of Dependency Inversion Principle (DIP)
+--
+
+It inverses the control by shifting the control to IOC container.

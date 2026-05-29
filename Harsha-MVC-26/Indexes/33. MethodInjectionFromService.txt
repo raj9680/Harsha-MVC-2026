@@ -1,0 +1,12 @@
+﻿1. Method Injection From Service: If service ref. is only rquired for specific method. Then insted of injecting DI into ctor. We can also Inject the same in method. 
+
+
+public class ServiceExampleController : Controller
+{   
+    [Route("cities")]
+    public IActionResult Index([FromServices] ICitiesService _citiesService)
+    {
+        List<string> cities = _citiesService.GetCities();
+        return View(cities);
+    }
+}

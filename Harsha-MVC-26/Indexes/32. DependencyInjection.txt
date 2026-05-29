@@ -1,0 +1,5 @@
+﻿1. Dependency Injection: It is a design pattern, which is a technique for achieving "IOC" between clients and their dependencies.
+
+It allows you to inject (supply) a concrete implementation object of a low level component into a high-level component.
+
+The client class receives the dependency object as a parameter either in the constructor or in a method.
