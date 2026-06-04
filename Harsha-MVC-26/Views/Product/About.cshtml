@@ -1,4 +1,5 @@
-﻿@{
+﻿@inject ICitiesService citiesServiceInView
+@{
     ViewData["Title"] = "About - Asp Net Core";
 }
 
@@ -12,13 +13,9 @@
 
 
 
-
-
 @*VC 2: View Component with ViewData*@
 <h3 class="text-green">View Component with ViewData</h3>
 @await Component.InvokeAsync("GridWithViewData")
-
-
 
 
 
@@ -46,8 +43,6 @@
 
 
 
-
-
 @*VC 4: View Component Result - Async*@
 <h3 class="text-green">View Component Result - Async</h3>
 <button class="button blue-back" type="button" id="button-load" style="padding:10px; margin-left:20px">
@@ -65,6 +60,24 @@
     });
 
 </script>
+
+
+
+@*View Injection: Injecting Service from Views*@
+<h3 class="text-green">Injecting Service from Views</h3>
+
+<div class="box">
+    <h1>Cities</h1>
+    @{
+        List<string> vs = citiesServiceInView.GetCities();
+    }
+    <ul class="list">
+        @foreach(var item in vs)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</div>
 
 
 

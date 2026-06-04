@@ -1,0 +1,30 @@
+﻿1. Environments: These concept is useful for running the application in deifferent environment , staging, develelopment & production
+
+-----------
+
+lanuchSettings.json
+------------------
+
+"environmentVariables":
+{
+	"DOTNET_ENVIRONMENT": "EnvironmentNameHere",
+	"ASPNETCORE_ENVIRONMENT": "EnvironmentNameHere"
+}
+
+---------Environment Specific Checks
+
+Program.cs
+----------
+
+if(app.Environment.IsDevelopment())
+{
+	app.UseDeveloperExceptionPage();
+	// if Development env then only exception will be shown
+}
+
+// OR
+
+if(app.Environment.IsEnvironment("CustomEnvName"))  // for custom env Name
+{
+	app.UseDeveloperExceptionPage();
+}

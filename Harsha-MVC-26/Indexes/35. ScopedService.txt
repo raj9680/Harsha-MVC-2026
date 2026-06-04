@@ -1,0 +1,73 @@
+﻿1. Scoped Service: It is main use is to dispose the service scoped manually at 
+the end of the request or process. 
+
+Example: A database connection is open whenever application starts but it should be closed at the end of the application so, doing this process manually we 
+used this concept. However in case of entity-framework, this gets managed 
+automatically but while ADO.NET we need to do this manually.
+
+Steps:
+
+CitiesServiceDB.cs
+------------------
+
+public class CitiesServiceDB: ICitiesService, IDisposable
+{
+
+	public CitiesServiceDB() 
+	{
+
+		// To Open DB Connection here
+
+	}
+
+
+	// Interface method
+	public void Dispose() 
+	{
+		throw new NotImplementedException();
+		// To Close DB Connection here.
+	}
+	
+}
+
+
+HomeController.cs
+-----------------
+
+public class HomeController
+{
+
+	private readonly IServiceScopeFactory _serviceScopeFactory;
+
+	// CTOR
+	public HomeController(IServiceScopeFactory serviceScopeFactory)
+	{
+		_serviceScopeFactory = serviceScopeFactory;
+	}
+
+	[Route("/")]
+	public IActionResult Index()
+	{
+		using(IServiceScope scope = _serviceScopeFactory.CreateScope())
+		{
+			// inject citiesDB service
+			ICitiesService citiesService = scope.ServiceProvider.GetRequiredService<ICitiesService>();
+			// DB Work
+			ViewBad.Instance = citiesService.ServiceInstanceID;
+
+		} // end of the scope, it calls dispose() auto
+
+		return View();
+	}
+}
+
+
+Program.cs
+----------
+
+builder.Services.Add(new ServiceDescriptor(typeof(ICItiesService), 
+	typeof(CitiesService),
+	ServiceLifetime.Scoped)  // imp
+);
+
+

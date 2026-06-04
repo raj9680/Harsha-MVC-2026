@@ -1,0 +1,23 @@
+﻿1. ProcessLevelEnvironment: launchSettings.json is not available in production env. so how to set these environment in developer machines
+
+
+Steps 1: 
+1. Open terminal
+2. Locate the folder where application is located & go to project folder.
+3. dotnet run to run the application
+
+--Application will run in Development
+
+
+Step 2: To disable the launch profile
+1. dotnet run -no-launch-profile
+
+--Application will now run in Production
+
+
+Step 3: Set the env from cmd
+$Env: ASPNETCORE_ENVIRONMENT="Staging"
+Environment variable is now saved & now if we run it run in this set env.
+dotnet run -no-launch-profile
+
+--Application will now run in Staging

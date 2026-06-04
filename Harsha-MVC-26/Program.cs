@@ -7,11 +7,14 @@ builder.Services.AddControllersWithViews();
 
 //IOC Container
 
-builder.Services.Add(new ServiceDescriptor(
-    typeof(ICitiesService),
-    typeof(CitiesService),
-    ServiceLifetime.Transient
-));
+//builder.Services.Add(new ServiceDescriptor(
+//    typeof(ICitiesService),
+//    typeof(CitiesService),
+//    ServiceLifetime.Transient
+//));
+
+// Short Way
+builder.Services.AddTransient<ICitiesService, CitiesService>();
 
 // ends
 

@@ -1,0 +1,22 @@
+﻿1. EnvironmentsInTagHelper: To check the type of env in View/TagHelper
+
+Environment Specific Checks in View/TagHelper
+
+
+in View:
+---------
+
+<environment include="Environment1, Environment2">
+	Html content here
+</environment>
+
+or
+
+<environment exclude="Environment1, Environment2">
+	Html content here
+</environment>
+
+
+
+Note: It renders the content only when the current environment name does'nt 
+match with either of epecified environment names in the "exclude" property.

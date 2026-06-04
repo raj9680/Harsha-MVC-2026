@@ -1,0 +1,21 @@
+﻿1. EnvironmentsInController: To check the type of env in controllers
+
+Environment Specific Checks in COntroller
+
+
+EnvironmentController.cs
+------------------------
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+
+
+public class EnvironmentController: Controller
+{
+	private readonly IWebHostEnvironment _webHost;
+
+	public EnvironmentController(IWebHostEnvironment webHost)
+	{
+		_webHost = webHost;
+	}
+}
