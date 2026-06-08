@@ -1,0 +1,58 @@
+﻿1. Configuration As Service:
+
+========================================
+
+in appsettings.json
+--------------------
+
+{
+	MasterKey:
+	{
+		"Key1": "value",
+		"Key2": "value",
+		"Key3": "value",
+		"Key4": "value",
+	}
+}
+
+
+in Model.cs
+------------
+
+public class Model
+{
+	public string? Key1 {get; set;}
+	public string? Key2 {get; set;}
+	public string? Key3 {get; set;}
+	public string? Key4 {get; set;}
+}
+
+
+in Program.cs
+-----------------------
+
+builder.Services.Configure<Model>(
+    builder.Configuration.GetSection("MasterKey"));
+
+
+
+
+public class HomeController : Controller
+{
+    private readonly IConfiguration _configuration;
+    public HomeController(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
+
+    [Route("/")]
+    public IActionResult Index()
+    {
+       WeatherOptions options = _configuration.GetSection("weatherapi").Get<WeatherOptions>();
+
+       ViewBag.OptionsClientID = options.ClientID;
+       ViewBag.OptionsClientSecret = options.ClientSecret;
+          return View();
+     }
+}
+

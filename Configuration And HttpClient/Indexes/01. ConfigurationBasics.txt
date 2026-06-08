@@ -1,0 +1,55 @@
+﻿1. Configuratio Basics: Configuration are the constant key/value pairs that are set
+to a common location and can be read from anywhere in the same application.
+
+Examples: connection strings, ClientID & API keys to make REST-API calls, Domain 
+names, Constant email addresses etc.
+
+Way to Store Configurations in:
+
+1. appsettings.json
+2. Environment Variables
+3. File Configuration (Json, INI or XML files)
+4. In-Memory Configuration
+5. Secret Manager
+
+-------------------------------------------------------------
+
+1. appsettings.json - can be read from anywhere
+-----------------------------------------------
+
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "MyKey":  "MyValue from appsettings.json"
+}
+
+
+==
+
+
+2. Program.cs
+--------------
+
+// reading configuration from appsettings.json
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("/", async context =>
+    {
+        await context.Response.WriteAsync(
+            app.Configuration["MyKey"] + Environment.NewLine);
+
+        await context.Response.WriteAsync(
+            app.Configuration.GetValue<string>("MyKey") + Environment.NewLine);
+
+        await context.Response.WriteAsync(
+            app.Configuration.GetValue<string>("WrongKey", "Default Value"));
+    });
+});
+
+
+

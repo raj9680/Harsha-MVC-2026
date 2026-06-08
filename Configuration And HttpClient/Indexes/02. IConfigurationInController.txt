@@ -1,0 +1,26 @@
+﻿1. IConfiguration: In Controller & Other class
+
+---------------------------------------------------------
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+
+public class ControllerName: Controller
+{
+	private readonly IConfiguration _configuration;
+
+	public ControllerName(IConfiguration configuration)
+	{
+		_configuration = configuration;
+	}
+
+
+	[Route("/")]
+    public IActionResult Index()
+    {
+        ViewBag.MyKey = _configuration["MyKey"];
+        // With Default
+        ViewBag.MyKey1 = _configuration.GetValue("MyKeyw", "Default");
+        return View();
+    }
+}

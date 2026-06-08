@@ -1,0 +1,57 @@
+﻿1. IConfiguration: In Controller & Other class
+
+---------------------------------------------------------
+
+-> in appsettings.json
+------------------------
+
+{
+    "MasterKey":
+    {
+        "Key1": "value"
+        "Key2": "value"
+    }
+}
+
+
+-> to read confuguration
+-------------------------
+
+Configuration["MasterKey:Key1"];
+Configuration.GetValue("MasterKey:Key1", "Default")
+
+// GetSection
+GetSection(string key)
+Configuration.GetSection("MasterKey")["Key1"];
+
+--------------------------------------------
+
+
+HomeController.cs
+-------------------
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+
+public class ControllerName: Controller
+{
+	private readonly IConfiguration _configuration;
+
+	public ControllerName(IConfiguration configuration)
+	{
+		_configuration = configuration;
+	}
+
+
+	[Route("/")]
+    public IActionResult Index()
+    {
+        ViewBag.Log = _configuration["MasterKey:Key1"];
+        ViewBag.Log1 = _configuration.GetValue("MasterKey:Key1","Default");
+
+        // GetSection -- to Get Complete Section block
+
+
+        return View();
+     }
+}

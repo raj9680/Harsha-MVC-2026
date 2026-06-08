@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsha-MVC-26", "Harsha-MVC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsha-MVC-Essentials-26", "Harsha-MVC-Essentials-26\Harsha-MVC-Essentials-26.csproj", "{CB7C7970-3AA7-4236-A62A-0B8364BBAE46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{791A008C-E42D-43DA-A8AA-6517A87E8D2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{791A008C-E42D-43DA-A8AA-6517A87E8D2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceContracts", "ServiceContracts\ServiceContracts.csproj", "{FBD47874-2625-47C0-95B4-9CEFD35656A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceContracts", "ServiceContracts\ServiceContracts.csproj", "{FBD47874-2625-47C0-95B4-9CEFD35656A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration And HttpClient", "Configuration And HttpClient\Configuration And HttpClient.csproj", "{ED846412-D4CB-4730-AFDB-B516E42B5801}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FBD47874-2625-47C0-95B4-9CEFD35656A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBD47874-2625-47C0-95B4-9CEFD35656A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBD47874-2625-47C0-95B4-9CEFD35656A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED846412-D4CB-4730-AFDB-B516E42B5801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED846412-D4CB-4730-AFDB-B516E42B5801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED846412-D4CB-4730-AFDB-B516E42B5801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED846412-D4CB-4730-AFDB-B516E42B5801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

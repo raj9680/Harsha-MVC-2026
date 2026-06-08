@@ -1,0 +1,68 @@
+﻿1. Options Pattern: Options pattern uses custom classes to specify what 
+configiration settings are to be loaded into prperties.
+
+example: Reading the specific connection strings out of many configuration 
+settings.
+
+Note: 
+1. The option class should be a non abstract class with a public 
+parameterless ctor.
+2. Public read-write properties are bound. Fields are not bound.
+
+Also using Bind
+---------------
+
+Bind(object instance)
+-> Binds (loads) configuration in key/value pairs into properties of existing 
+object.
+
+========================================
+
+in appsettings.json
+--------------------
+
+{
+	MasterKey:
+	{
+		"Key1": "value",
+		"Key2": "value",
+		"Key3": "value",
+		"Key4": "value",
+	}
+}
+
+
+in Model.cs
+------------
+
+public class Model
+{
+	public string? Key1 {get; set;}
+	public string? Key2 {get; set;}
+	public string? Key3 {get; set;}
+	public string? Key4 {get; set;}
+}
+
+
+in HomeController.cs
+-----------------------
+
+public class HomeController : Controller
+{
+    private readonly IConfiguration _configuration;
+    public HomeController(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
+
+    [Route("/")]
+    public IActionResult Index()
+    {
+       WeatherOptions options = _configuration.GetSection("weatherapi").Get<WeatherOptions>();
+
+       ViewBag.OptionsClientID = options.ClientID;
+       ViewBag.OptionsClientSecret = options.ClientSecret;
+          return View();
+     }
+}
+

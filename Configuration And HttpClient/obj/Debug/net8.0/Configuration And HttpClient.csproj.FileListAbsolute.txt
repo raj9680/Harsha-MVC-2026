@@ -1,0 +1,29 @@
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\appsettings.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\Configuration And HttpClient.exe
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\Configuration And HttpClient.deps.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\Configuration And HttpClient.runtimeconfig.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\Configuration And HttpClient.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\Configuration And HttpClient.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.AssemblyInfoInputs.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.AssemblyInfo.cs
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.csproj.CoreCompileInputs.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.sourcelink.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets\msbuild.Configuration And HttpClient.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets\msbuild.build.Configuration And HttpClient.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Configuration And HttpClient.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Configuration And HttpClient.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\scopedcss\bundle\Configuration And HttpClient.styles.css
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\refint\Configuration And HttpClient.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.genruntimeconfig.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\ref\Configuration And HttpClient.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\bin\Debug\net8.0\Configuration And HttpClient.staticwebassets.runtime.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.RazorAssemblyInfo.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Configuration And HttpClient\obj\Debug\net8.0\Configuration And HttpClient.RazorAssemblyInfo.cs

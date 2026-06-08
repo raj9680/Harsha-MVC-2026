@@ -1,0 +1,14 @@
+﻿1. HttpClient: Is a class for sending HTTP request to a specific HTTP resource 
+(using its URL) & receiving HTTP responses from the same.
+
+Example: Making a request to a third party weather API, ChatGPt etc.
+
+IHttpClient: Is an interface that provides a method called CreateClient() that creates a new instance of HttpClient class and also automatically disposes the same instance (closes the connection) immediately after use.
+------------------------------------------------------------------------
+
+
+in Program.cs
+--------------
+
+builder.Services.AddHttpClient();
+

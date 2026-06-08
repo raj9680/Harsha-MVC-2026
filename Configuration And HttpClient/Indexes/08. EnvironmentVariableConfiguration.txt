@@ -1,0 +1,14 @@
+﻿1. Env Specific Conf: We can create different conf. files for each environment
+
+========================================
+
+-> Order of Precedence
+										   ________ appsettings.Developmen.json
+1. appsettings.json                       |
+2. appsettings.EnvironmentName.json ------------- appsettings.Staging.json
+3. User Secrets (Secret Manager)          |
+4. Environment Variables				   --------- appsettings.Production.json
+5. Command Line Arguments
+
+
+Note: Loaded last has highest precendence
