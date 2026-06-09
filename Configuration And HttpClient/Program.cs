@@ -1,12 +1,16 @@
 using Configuration_And_HttpClient.Options;
+using Configuration_And_HttpClient.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<FinnHubService>();
 
 // Supply an object of WeatherOptions (with 'weatherapi' section) as Service
 builder.Services.Configure<WeatherOptions>(
     builder.Configuration.GetSection("weatherapi")
 );
+
 
 
 var app = builder.Build();

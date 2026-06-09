@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\services\\myservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\services\\myservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\indexes\\10. httpclient.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\indexes\\10. httpclient.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\views\\httpclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\views\\httpclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\controllers\\httpclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\controllers\\httpclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\configuration and httpclient\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED846412-D4CB-4730-AFDB-B516E42B5801}|Configuration And HttpClient\\Configuration And HttpClient.csproj|solutionrelative:configuration and httpclient\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,115 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyService.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Services\\MyService.cs",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Services\\MyService.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Services\\MyService.cs",
-              "RelativeToolTip": "Configuration And HttpClient\\Services\\MyService.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:16:16.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\HttpClient\\Index.cshtml",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Views\\HttpClient\\Index.cshtml",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\HttpClient\\Index.cshtml",
-              "RelativeToolTip": "Configuration And HttpClient\\Views\\HttpClient\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T12:07:50.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Configuration And HttpClient\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T11:57:47.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Configuration And HttpClient\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABrAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T11:57:42.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Configuration And HttpClient\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:57:03.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "10. HttpClient.txt",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Indexes\\10. HttpClient.txt",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Indexes\\10. HttpClient.txt",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Indexes\\10. HttpClient.txt",
-              "RelativeToolTip": "Configuration And HttpClient\\Indexes\\10. HttpClient.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAADaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-06-08T11:53:57.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Configuration And HttpClient\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T12:06:46.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HttpClientController.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Controllers\\HttpClientController.cs",
-              "RelativeDocumentMoniker": "Configuration And HttpClient\\Controllers\\HttpClientController.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Configuration And HttpClient\\Controllers\\HttpClientController.cs",
-              "RelativeToolTip": "Configuration And HttpClient\\Controllers\\HttpClientController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:53:07.454Z",
-              "EditorCaption": ""
             }
           ]
         }

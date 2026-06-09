@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Harsha-MVC-26")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63cf3a3d86f8cfcd6ba592e0dcb16cd4afc54076")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5476d4193c7382d63ca8a212d41257b0252ff4a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Harsha-MVC-26")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Harsha-MVC-26")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
