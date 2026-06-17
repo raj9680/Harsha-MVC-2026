@@ -1,0 +1,5 @@
+﻿Project Reference:
+
+Main Project - CRUD Operations
+
+-> CRUD Operation references [Services, Service Contracts]

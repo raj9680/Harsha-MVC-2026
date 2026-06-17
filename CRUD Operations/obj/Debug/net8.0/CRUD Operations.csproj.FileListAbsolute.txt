@@ -1,0 +1,37 @@
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\appsettings.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\CRUD Operations.staticwebassets.runtime.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\CRUD Operations.exe
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\CRUD Operations.deps.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\CRUD Operations.runtimeconfig.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\CRUD Operations.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\CRUD Operations.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\Entities.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\ServiceContracts.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\Services.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\Entities.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\ServiceContracts.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\bin\Debug\net8.0\Services.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.csproj.AssemblyReference.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.AssemblyInfoInputs.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.AssemblyInfo.cs
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.csproj.CoreCompileInputs.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.RazorAssemblyInfo.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.RazorAssemblyInfo.cs
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.sourcelink.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets\msbuild.CRUD Operations.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets\msbuild.build.CRUD Operations.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CRUD Operations.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CRUD Operations.props
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\scopedcss\bundle\CRUD Operations.styles.css
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Ope.A9D5F7A4.Up2Date
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\refint\CRUD Operations.dll
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\CRUD Operations.genruntimeconfig.cache
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\CRUD Operations\obj\Debug\net8.0\ref\CRUD Operations.dll

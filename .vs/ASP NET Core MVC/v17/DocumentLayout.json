@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{791A008C-E42D-43DA-A8AA-6517A87E8D2E}|Services\\Services.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{791A008C-E42D-43DA-A8AA-6517A87E8D2E}|Services\\Services.csproj|solutionrelative:services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC63D64-F911-43C5-835D-88ED227A136F}|CRUD Tests\\CRUD Tests.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\crud tests\\personservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC63D64-F911-43C5-835D-88ED227A136F}|CRUD Tests\\CRUD Tests.csproj|solutionrelative:crud tests\\personservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\servicecontracts\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{791A008C-E42D-43DA-A8AA-6517A87E8D2E}|Services\\Services.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\services\\helpers\\validationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{791A008C-E42D-43DA-A8AA-6517A87E8D2E}|Services\\Services.csproj|solutionrelative:services\\helpers\\validationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Tests\\PersonServiceTest.cs",
+              "RelativeDocumentMoniker": "CRUD Tests\\PersonServiceTest.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Tests\\PersonServiceTest.cs",
+              "RelativeToolTip": "CRUD Tests\\PersonServiceTest.cs",
+              "ViewState": "AQIAAC0BAAAAAAAAAAAiwE0BAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T12:05:39.177Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Services\\PersonService.cs",
+              "RelativeToolTip": "Services\\PersonService.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAiwIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T12:04:48.072Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValidationHelper.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Services\\Helpers\\ValidationHelper.cs",
+              "RelativeDocumentMoniker": "Services\\Helpers\\ValidationHelper.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Services\\Helpers\\ValidationHelper.cs",
+              "RelativeToolTip": "Services\\Helpers\\ValidationHelper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T08:32:26.246Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPersonService.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\IPersonService.cs",
+              "RelativeDocumentMoniker": "ServiceContracts\\IPersonService.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\IPersonService.cs",
+              "RelativeToolTip": "ServiceContracts\\IPersonService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T12:08:09.987Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

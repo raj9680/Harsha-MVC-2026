@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "8jXuvBXRteSGi2JlCYGatcMJhtALPkWYlQx2gMuNJoY=",
+  "Source": "CRUD Operations",
+  "BasePath": "_content/CRUD Operations",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CRUD Operations\\wwwroot",
+      "Source": "CRUD Operations",
+      "ContentRoot": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\wwwroot\\",
+      "BasePath": "_content/CRUD Operations",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\wwwroot\\StyleSheet.css",
+      "SourceId": "CRUD Operations",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\wwwroot\\",
+      "BasePath": "_content/CRUD Operations",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceContracts", "Service
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configuration And HttpClient", "Configuration And HttpClient\Configuration And HttpClient.csproj", "{ED846412-D4CB-4730-AFDB-B516E42B5801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD Operations", "CRUD Operations\CRUD Operations.csproj", "{D883FE9E-F416-49BB-9FC1-9534A5E296A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD Operations", "CRUD Operations\CRUD Operations.csproj", "{D883FE9E-F416-49BB-9FC1-9534A5E296A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{14F85CE9-42D1-48C1-8DDA-B2BD40CBE80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD Tests", "CRUD Tests\CRUD Tests.csproj", "{FFC63D64-F911-43C5-835D-88ED227A136F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{D883FE9E-F416-49BB-9FC1-9534A5E296A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D883FE9E-F416-49BB-9FC1-9534A5E296A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D883FE9E-F416-49BB-9FC1-9534A5E296A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F85CE9-42D1-48C1-8DDA-B2BD40CBE80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F85CE9-42D1-48C1-8DDA-B2BD40CBE80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F85CE9-42D1-48C1-8DDA-B2BD40CBE80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F85CE9-42D1-48C1-8DDA-B2BD40CBE80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC63D64-F911-43C5-835D-88ED227A136F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC63D64-F911-43C5-835D-88ED227A136F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC63D64-F911-43C5-835D-88ED227A136F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC63D64-F911-43C5-835D-88ED227A136F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

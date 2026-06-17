@@ -15,13 +15,22 @@
           "Harsha-MVC-26.dll": {}
         }
       },
+      "Entities/1.0.0": {
+        "runtime": {
+          "Entities.dll": {}
+        }
+      },
       "ServiceContracts/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
         "runtime": {
           "ServiceContracts.dll": {}
         }
       },
       "Services/1.0.0": {
         "dependencies": {
+          "Entities": "1.0.0",
           "ServiceContracts": "1.0.0"
         },
         "runtime": {
@@ -32,6 +41,11 @@
   },
   "libraries": {
     "Harsha-MVC-26/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

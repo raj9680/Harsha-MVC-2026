@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Harsha-MVC-Essentials-26")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5476d4193c7382d63ca8a212d41257b0252ff4a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c599cd857e8df0243f7bdfcebdc19cb0e71b8ed4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Harsha-MVC-Essentials-26")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Harsha-MVC-Essentials-26")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
