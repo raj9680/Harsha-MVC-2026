@@ -1,4 +1,6 @@
 ﻿using Entities;
+using ServiceContracts.DTO.Enums;
+using ServiceContracts.Enumss;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +22,13 @@ namespace ServiceContracts.DTO
         public string? Address { get; set; }
         public bool ReceiveNewsLetter { get; set; }
         public double? Age { get; set; }
+
+
+        // To convert person response to PersonUpdateRequest & return the same obj
+        public PersonUpdateRequest ToPersonUpdateRequest()
+        {
+            return new PersonUpdateRequest { PersonID = PersonID, PersonName = PersonName, Email = Email, DateOfBirth = DateOfBirth, Gender = (GenderOptions)Enum.Parse(typeof(GenderOptions), Gender, true), CountryID = CountryID, Address = Address, ReceiveNewsLetters = ReceiveNewsLetter };
+        }
 
 
         // Override Equals Method to check value, bcz byDefault it check for objs

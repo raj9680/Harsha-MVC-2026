@@ -1,6 +1,7 @@
 ﻿using Entities;
 using ServiceContracts;
 using ServiceContracts.DTO;
+using ServiceContracts.Enums;
 using Services.Helpers;
 using System;
 using System.Collections.Generic;
@@ -98,7 +99,6 @@ namespace Services
             return response;
         }
 
-
         // Very Imp.
         public List<PersonResponse> GetFilteredPersons(string searchBy, string? searchString)
         {
@@ -166,6 +166,111 @@ namespace Services
             }
 
             return matchingPersons;
+        }
+
+        public List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOrder)
+        {
+            if (string.IsNullOrEmpty(sortBy))
+            {
+                return allPersons;
+            }
+
+            List<PersonResponse> sortedPerson =
+
+            // using SwitchExpression
+
+            // ASC - PersonName
+            (sortBy, sortOrder) switch
+            {
+                // ASC - PersonName
+                (nameof(PersonResponse.PersonName), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.PersonName, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                // DESC - PersonName
+                (nameof(PersonResponse.PersonName), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.PersonName, StringComparer.OrdinalIgnoreCase).ToList(),
+
+
+
+                // ASC - Email
+                (nameof(PersonResponse.Email), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.Email, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                // DESC - Email
+                (nameof(PersonResponse.Email), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.Email, StringComparer.OrdinalIgnoreCase).ToList(),
+
+
+
+                // DOB - ASC
+                (nameof(PersonResponse.DateOfBirth), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.DateOfBirth).ToList(),
+
+                // DOB - DESC
+                (nameof(PersonResponse.DateOfBirth), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.DateOfBirth).ToList(),
+
+
+
+                // AGE - ASC
+                (nameof(PersonResponse.Age), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.Age).ToList(),
+
+                // AGE - DESC
+                (nameof(PersonResponse.Age), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.Age).ToList(),
+
+
+
+                // Gender - ASC
+                (nameof(PersonResponse.Gender), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.Gender).ToList(),
+
+                // Gender - DESC
+                (nameof(PersonResponse.Gender), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.Gender).ToList(),
+
+
+
+                // Country - ASC
+                (nameof(PersonResponse.Country), SortOrderOptions.ASC) => allPersons.OrderBy(temp => temp.Country).ToList(),
+
+                // Country - DESC
+                (nameof(PersonResponse.Country), SortOrderOptions.DESC) => allPersons.OrderByDescending(temp => temp.Country).ToList(),
+
+                // Default
+                _ => allPersons
+            };
+            return sortedPerson;
+        }
+
+        public PersonResponse PersonUpdate(PersonUpdateRequest personUpdateRequest)
+        {
+            /*
+
+             1. Check if "personUpdateRequest" is not null
+             2. Validate all properties of "personUpdateRequest"
+             3. Get the matching "Person" object from List<Person> based on PersonID
+             4. Check if matching "Person" object is not null
+             5. Update all details from "PersonUpdateRequest" object to "Person" object
+             6. Convert the person object from "Person" to "PersonResponse" type
+             7. Return PersonResponse object with updated details
+
+             */
+
+            // When PersonUpdate request is null
+            if(personUpdateRequest == null)
+            {
+                throw new ArgumentNullException(nameof(personUpdateRequest));
+            }
+
+            PersonResponse? personData = _persons.FirstOrDefault(temp => temp.PersonID == personUpdateRequest.PersonID)?.ToPersonResponse();
+
+
+            // When PersonID is invalid/empty
+            if(personUpdateRequest.PersonID != personData?.PersonID || personUpdateRequest.PersonID == Guid.Empty)
+            {
+                throw new ArgumentException(nameof(personUpdateRequest.PersonID));
+            }
+
+
+            // When PersonName is null
+            if (personUpdateRequest.PersonName == null)
+            {
+                throw new ArgumentException(nameof(personUpdateRequest.PersonName));
+            }
+
+            return null;
         }
     }
 }

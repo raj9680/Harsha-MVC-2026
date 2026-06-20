@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceContracts.Enums
+namespace ServiceContracts.Enumss
 {
-    public class GenderOptions
+    public class GenderOption
     {
     }
 }
