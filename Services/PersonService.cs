@@ -1,42 +1,42 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
 using Services.Helpers;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services
 {
     public class PersonService : IPersonService
     {
         // private field
+        private readonly PersonsDbContext _dbContext;
         private readonly List<Person> _persons;
         private readonly ICountriesService _countries;
 
-        public PersonService()
+        public PersonService(PersonsDbContext dbContext, ICountriesService countries)
         {
-            _persons = new List<Person>();
-            _countries = new CountriesService();
+            _dbContext = dbContext;
+            _countries = countries;
         }
 
         // Private method to 
-        PersonResponse ConvertPersonToPersonResponse(Person person)
+        async Task<PersonResponse> ConvertPersonToPersonResponse(Person person)
         {
             // Convert the Person Object into PersonResponsetype
             PersonResponse personResponse = person.ToPersonResponse();
 
             // Get CountryName from CountryService using CountryID
-            personResponse.Country = _countries.GetCountryByCountryID(person.CountryID)?.CountryName;
+            //personResponse.Country = await _countries.GetCountryByCountryID(person.CountryID).CountryName;
+
+            CountryResponse? country = await _countries.GetCountryByCountryID(person.CountryID);
+
+            personResponse.Country = country?.CountryName;
 
             return personResponse;
         }
 
-        public PersonResponse AddPerson(PersonAddRequest personAddRequest)
+        public async Task<PersonResponse> AddPerson(PersonAddRequest personAddRequest)
         {
             /// Steps
             /// 1. Check if "personAddRequest" is not null
@@ -67,19 +67,59 @@ namespace Services
             personObj.PersonID = Guid.NewGuid();
 
             // 4. add Person to Data Store
-            _persons.Add(personObj);
+            //_dbContext.Persons.Add(personObj);
+            //_dbContext.SaveChanges();
+
+            // Using SP
+            _dbContext.sp_InsertPerson(personObj);
 
             // 5. convert the Person object into PersonResponse type
-            return ConvertPersonToPersonResponse(personObj);
+            return await ConvertPersonToPersonResponse(personObj);
         }
 
-        public List<PersonResponse> GetAllPerson()
+        public async Task<List<PersonResponse>> GetAllPerson()
+        
         {
-            List<PersonResponse> allPerson = _persons.Select(p => p.ToPersonResponse()).ToList();
-            return allPerson;
+            /* 
+               Very Important to understand,  -- It is not allowed to call own instance method 
+               inside linq operation as it is refering to current object -- generate the exception 
+               and learn what it means
+
+               List<PersonResponse> allPerson = _dbContext.Persons.Select(p => ConvertPersonToPersonResponse(p)).ToList(); 
+
+               Valid - Normal Way to Retreive from DB
+               var persons = _dbContext.Persons.ToList();
+
+               var responses = persons
+                .Select(ConvertPersonToPersonResponse)
+                .ToList();
+
+                return responses;
+            */
+
+            var allP = await _dbContext.Persons.Include("Country").ToListAsync(); // "Country" here is not a model class name, but a navigation property from Person Class
+
+            // Using - StoredProcedure to retreive from DB
+            //_dbContext.sp_GetAllPersons().Select(temp => ConvertPersonToPersonResponse(temp)).ToList();
+
+            // bcz of async method conversion
+            var persons = _dbContext.sp_GetAllPersons();
+            //var personResponses = await Task.WhenAll(
+            //persons.Select(ConvertPersonToPersonResponse)
+            //);
+            //return personResponses.ToList();
+
+            List<PersonResponse> personResponses = new();
+
+            foreach (var person in persons)
+            {
+                personResponses.Add(await ConvertPersonToPersonResponse(person));
+            }
+
+            return personResponses;
         }
 
-        public PersonResponse? GetPersonByID(Guid? PersonID)
+        public PersonResponse GetPersonByID(Guid? PersonID)
         {
             /* 
              1. Check if "personID" is not null.
@@ -91,16 +131,22 @@ namespace Services
             if(PersonID == null)
                 return null;
 
-            Person? person = _persons.FirstOrDefault(p=>p.PersonID == PersonID);
+            Person? person = _dbContext.Persons.FirstOrDefault(p=>p.PersonID == PersonID);
             if(person == null)
                 return null;
 
-            PersonResponse response = person.ToPersonResponse();
+            //PersonResponse response = person.ToPersonResponse();
+            //return response;
+
+            //PersonResponse response = await ConvertPersonToPersonResponse(person);
+
+            // blocking async
+            PersonResponse response = ConvertPersonToPersonResponse(person).GetAwaiter().GetResult();
             return response;
         }
 
         // Very Imp.
-        public List<PersonResponse> GetFilteredPersons(string searchBy, string? searchString)
+        public async Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString)
         {
             /*
              1. Check if "searchBy" is not null
@@ -111,7 +157,7 @@ namespace Services
              4. Return all matching PersonResponse objects.
              */
 
-            List<PersonResponse> allPersons = GetAllPerson();
+            List<PersonResponse> allPersons = await GetAllPerson();
             List<PersonResponse> matchingPersons = allPersons;
 
             if(string.IsNullOrEmpty(searchBy) || string.IsNullOrEmpty(searchString))
@@ -121,14 +167,14 @@ namespace Services
 
             switch (searchBy)
             {
-                case nameof(Person.PersonName): 
+                case nameof(PersonResponse.PersonName): 
                     matchingPersons = allPersons.Where(temp => 
                     (!string.IsNullOrEmpty(temp.PersonName) ? temp.PersonName.Contains(
                         searchString, StringComparison.OrdinalIgnoreCase) : true)).ToList();
                     break;
 
 
-                case nameof(Person.Email):
+                case nameof(PersonResponse.Email):
                     matchingPersons = allPersons.Where(temp =>
                     (!string.IsNullOrEmpty(temp.Email) ? temp.Email.Contains(
                         searchString, StringComparison.OrdinalIgnoreCase) : true)).ToList();
@@ -136,26 +182,26 @@ namespace Services
 
 
                 // Note: Below DOB is of DateTime so, Contains methods won't work so needed to convert the same in string first
-                case nameof(Person.DateOfBirth):
+                case nameof(PersonResponse.DateOfBirth):
                     matchingPersons = allPersons.Where(temp => (temp.DateOfBirth != null) ? temp.DateOfBirth.Value.ToString("dd MM yyyy").Contains(
                         searchString, StringComparison.OrdinalIgnoreCase) : true).ToList();
                     break;
 
 
-                case nameof(Person.Gender):
+                case nameof(PersonResponse.Gender):
                     matchingPersons = allPersons.Where(temp => (temp.Gender != null) ? temp.Gender.Contains(
                         searchString, StringComparison.OrdinalIgnoreCase) : true).ToList();
                     break;
 
 
-                case nameof(Person.CountryID):
+                case nameof(PersonResponse.CountryID):
                     matchingPersons = allPersons.Where(temp =>
                     (!string.IsNullOrEmpty(temp.Country) ? temp.Country.Contains(
                         searchString, StringComparison.OrdinalIgnoreCase) : true)).ToList();
                     break;
 
 
-                case nameof(Person.Address):
+                case nameof(PersonResponse.Address):
                     matchingPersons = allPersons.Where(temp =>
                     (!string.IsNullOrEmpty(temp.Address) ? temp.Address.Contains(
                         searchString, StringComparison.OrdinalIgnoreCase) : true)).ToList();
@@ -175,7 +221,7 @@ namespace Services
                 return allPersons;
             }
 
-            List<PersonResponse> sortedPerson =
+            List<PersonResponse> sortedPerson = 
 
             // using SwitchExpression
 
@@ -234,7 +280,7 @@ namespace Services
             return sortedPerson;
         }
 
-        public PersonResponse PersonUpdate(PersonUpdateRequest personUpdateRequest)
+        public async Task<PersonResponse> PersonUpdate(PersonUpdateRequest personUpdateRequest)
         {
             /*
 
@@ -251,26 +297,49 @@ namespace Services
             // When PersonUpdate request is null
             if(personUpdateRequest == null)
             {
-                throw new ArgumentNullException(nameof(personUpdateRequest));
+                throw new ArgumentNullException(nameof(Person));
             }
 
-            PersonResponse? personData = _persons.FirstOrDefault(temp => temp.PersonID == personUpdateRequest.PersonID)?.ToPersonResponse();
+            // validation
+            ValidationHelper.ModelValidation(personUpdateRequest);
 
+            Person? matchingPerson = await _dbContext.Persons.FirstOrDefaultAsync(temp => temp.PersonID == personUpdateRequest.PersonID);
 
-            // When PersonID is invalid/empty
-            if(personUpdateRequest.PersonID != personData?.PersonID || personUpdateRequest.PersonID == Guid.Empty)
+            if(matchingPerson == null)
             {
-                throw new ArgumentException(nameof(personUpdateRequest.PersonID));
+                throw new ArgumentException("Given person ID doesn't exist");
             }
 
+            // Update all details
+            matchingPerson.PersonName = personUpdateRequest.PersonName;
+            matchingPerson.Email = personUpdateRequest.Email;
+            matchingPerson.CountryID = personUpdateRequest.CountryID;
+            matchingPerson.ReceiveNewsLetter = personUpdateRequest.ReceiveNewsLetters;
 
-            // When PersonName is null
-            if (personUpdateRequest.PersonName == null)
-            {
-                throw new ArgumentException(nameof(personUpdateRequest.PersonName));
-            }
+            await _dbContext.SaveChangesAsync(); // Updates in DB 
 
-            return null;
+            // return matchingPerson.ToPersonResponse();
+
+            return await ConvertPersonToPersonResponse(matchingPerson);
         }
+
+        public async Task<bool> DeletePerson(Guid? PersonID)
+        {
+            if(PersonID == null)
+            {
+                throw new ArgumentNullException(nameof(PersonID));
+            }
+
+            var person = await _dbContext.Persons.FirstOrDefaultAsync(temp => temp.PersonID == PersonID);
+            if (person != null)
+            {
+                _dbContext.Persons.Remove(person);
+                await _dbContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
+        }
+
     }
 }

@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{791A008C-E42D-43DA-A8AA-6517A87E8D2E}|Services\\Services.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{791A008C-E42D-43DA-A8AA-6517A87E8D2E}|Services\\Services.csproj|solutionrelative:services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\crud operations\\views\\person\\personpdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|solutionrelative:crud operations\\views\\person\\personpdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC63D64-F911-43C5-835D-88ED227A136F}|CRUD Tests\\CRUD Tests.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\crud tests\\personservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC63D64-F911-43C5-835D-88ED227A136F}|CRUD Tests\\CRUD Tests.csproj|solutionrelative:crud tests\\personservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\crud operations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|solutionrelative:crud operations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\servicecontracts\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\crud operations\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|solutionrelative:crud operations\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\servicecontracts\\dto\\personupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\dto\\personupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\servicecontracts\\dto\\personresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\dto\\personresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\servicecontracts\\dto\\personaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD47874-2625-47C0-95B4-9CEFD35656A7}|ServiceContracts\\ServiceContracts.csproj|solutionrelative:servicecontracts\\dto\\personaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|c:\\users\\raj.kumar\\documents\\mvc\\harsha-mvc-2026\\crud operations\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D883FE9E-F416-49BB-9FC1-9534A5E296A2}|CRUD Operations\\CRUD Operations.csproj|solutionrelative:crud operations\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,88 +26,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonService.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Services\\PersonService.cs",
-              "RelativeDocumentMoniker": "Services\\PersonService.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\Services\\PersonService.cs",
-              "RelativeToolTip": "Services\\PersonService.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAmwPEAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:18:52.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPersonService.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\IPersonService.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\IPersonService.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\IPersonService.cs",
-              "RelativeToolTip": "ServiceContracts\\IPersonService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:18:07.167Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Tests\\PersonServiceTest.cs",
-              "RelativeDocumentMoniker": "CRUD Tests\\PersonServiceTest.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Tests\\PersonServiceTest.cs",
-              "RelativeToolTip": "CRUD Tests\\PersonServiceTest.cs",
-              "ViewState": "AQIAAI0BAAAAAAAAAAAAAJwBAABfAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Program.cs",
+              "RelativeDocumentMoniker": "CRUD Operations\\Program.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Program.cs",
+              "RelativeToolTip": "CRUD Operations\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:15:41.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PersonResponse.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\DTO\\PersonResponse.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\DTO\\PersonResponse.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\DTO\\PersonResponse.cs",
-              "RelativeToolTip": "ServiceContracts\\DTO\\PersonResponse.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB0AAAAhAQAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:02:57.158Z",
+              "WhenOpened": "2026-07-06T12:53:41.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PersonUpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\DTO\\PersonUpdateRequest.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\DTO\\PersonUpdateRequest.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\DTO\\PersonUpdateRequest.cs",
-              "RelativeToolTip": "ServiceContracts\\DTO\\PersonUpdateRequest.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T11:48:28.345Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Views\\Person\\Index.cshtml",
+              "RelativeDocumentMoniker": "CRUD Operations\\Views\\Person\\Index.cshtml",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Views\\Person\\Index.cshtml",
+              "RelativeToolTip": "CRUD Operations\\Views\\Person\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T12:30:24.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonAddRequest.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "RelativeDocumentMoniker": "ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "RelativeToolTip": "ServiceContracts\\DTO\\PersonAddRequest.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "CRUD Operations\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "CRUD Operations\\Controllers\\PersonController.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAkwLkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:02:33.988Z",
+              "WhenOpened": "2026-07-06T12:38:21.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonPDF.cshtml",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Views\\Person\\PersonPDF.cshtml",
+              "RelativeDocumentMoniker": "CRUD Operations\\Views\\Person\\PersonPDF.cshtml",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\MVC\\Harsha-MVC-2026\\CRUD Operations\\Views\\Person\\PersonPDF.cshtml",
+              "RelativeToolTip": "CRUD Operations\\Views\\Person\\PersonPDF.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAADYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T12:30:08.75Z",
               "EditorCaption": ""
             }
           ]

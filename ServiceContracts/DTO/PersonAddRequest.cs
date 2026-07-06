@@ -16,8 +16,13 @@ namespace ServiceContracts.DTO
     {
         [Required(ErrorMessage ="Person Name is required")]
         public string? PersonName { get; set; }
+
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Email Required")]
         public string? Email { get; set; }
         public DateTime? DateOfBirth { get; set; }
+
+        [Required(ErrorMessage ="Gender Required")]
         public GenderOptions? Gender { get; set; }
         public Guid? CountryID { get; set; }
         public string? Address { get; set; }

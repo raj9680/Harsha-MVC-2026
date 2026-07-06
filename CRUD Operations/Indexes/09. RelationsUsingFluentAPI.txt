@@ -1,0 +1,13 @@
+﻿Relations Using Fluent API
+
+// 1
+public class CustomDbContext: DbContext 
+{
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+     {
+        modelBuilder.Entity<ChildModel>()
+            .HasOne<ParentModel>(parent=>parent.ParentReferencePropertyInChildModel)
+            .WithMany(child=>child.ChildReferencePropertyInParentModel) // optional
+            .HasForeignKey(child=>child.ForeignKeyPropertyInChildModel)
+     }
+}

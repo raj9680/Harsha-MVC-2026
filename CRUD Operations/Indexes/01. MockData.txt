@@ -1,0 +1,23 @@
+﻿1. Mock Data - We will add few moch data to show on UI
+-----------------------------------------------------------
+
+In Country Service -
+
+
+
+public CountriesService(bool initialize = true)
+{
+    _countries = new List<Country>();
+
+    if(initialize)
+    {
+        _countries.Add(new Country() { CountryID = Guid.NewGuid(), CountryName = "Japan" });
+        _countries.Add(new Country() { CountryID = Guid.NewGuid(), CountryName = "Korea" });
+        _countries.Add(new Country() { CountryID = Guid.NewGuid(), CountryName = "China" });
+        _countries.Add(new Country() { CountryID = Guid.NewGuid(), CountryName = "UBA" });
+    };
+}
+
+
+In Person Service -
+

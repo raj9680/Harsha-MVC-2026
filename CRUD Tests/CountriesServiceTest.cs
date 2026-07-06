@@ -1,4 +1,6 @@
-﻿using ServiceContracts;
+﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+using ServiceContracts;
 using ServiceContracts.DTO;
 using Services;
 using Xunit;
@@ -11,7 +13,7 @@ namespace CRUD_Test
 
         public CountriesServiceTest()
         {
-            _countriesService = new CountriesService();
+            _countriesService = new CountriesService(new Entities.PersonsDbContext(new DbContextOptionsBuilder<PersonsDbContext>().Options));
         }
 
 

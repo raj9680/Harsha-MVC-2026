@@ -1,0 +1,37 @@
+﻿Fluent API: Sometimes to create control of what DB to store data type in some cases- fluent API is 
+helpful
+
+// 1
+public class CustomDbContext: DbContext 
+{
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+     {
+        // Specify table name (and schema name optionally) to be mapped to the model class
+        modelBuilder.Entity<ModelClass>().ToTable("table_name", schema: "schema_name");
+
+        // Specify view name (and schema name optionally) to be mapped to the model class
+        modelBuilder.Entity<ModelClass>().ToView("view_name", schema: "schema_name");
+
+        // Specify view name (and schema name optionally) to be mapped to the model class
+        modelBuilder.HasDefaultSchema("schema_name");
+     }
+}
+
+
+// 2 - Very Imp
+public class CustomDbContext: DbContext 
+{
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+     {
+        modelBuilder.Entity<ModelClass>().Property(temp => temp.PropertyName)
+            .HasColumnName("column_name") // Specifies column name in table
+            .HasColumnType("data_type") // Specifies column data type in table
+            .HasColumnValue("default_value") // Specifies default value of the column
+
+        // Example:
+        modelBuilder.Entity<Person>().Property(temp => temp.TIN)
+            .HasColumnName("TaxIdentificationNumber")
+            .HasColumnType("varchar(8)")
+            .HasColumnValue("TIN00") // Specifies default value of the column
+     }
+}

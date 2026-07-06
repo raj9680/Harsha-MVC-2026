@@ -1,4 +1,6 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic.FileIO;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.DTO.Enums;
@@ -22,11 +24,15 @@ namespace CRUD_Tests
 
         public PersonServiceTest(ITestOutputHelper testOutputHelper)
         {
-            _personService = new PersonService();
             _countriesService = new CountriesService();
+
+            _personService = new PersonService(new Entities.PersonsDbContext(new DbContextOptionsBuilder<PersonsDbContext>().Options), _countriesService);
+            
             _outputHelper = testOutputHelper;
         }
 
+
+        #region AddPerson
         // Private function to Add Persons - 2
         private List<PersonResponse> AddPersonTwo()
         {
@@ -141,6 +147,10 @@ namespace CRUD_Tests
             Assert.Contains(personResponse, personResponseGet);
         }
 
+        #endregion
+
+
+        #region GetPerson
         // When we supply personID to get specific person details
         [Fact]
         public void GetPerson_PersonByPersonID()
@@ -179,6 +189,7 @@ namespace CRUD_Tests
             // Assert - 3
             Assert.Contains(personResponse, personResponseGet);
         }
+
 
         // To get All Person
         [Fact]
@@ -313,6 +324,10 @@ namespace CRUD_Tests
             }
         }
 
+        #endregion
+
+
+        #region PersonUpdate
 
         // When we supply null as PersonUpdateRequest, it should throw ArgumentNullException
         [Fact]
@@ -360,7 +375,8 @@ namespace CRUD_Tests
             PersonAddRequest personAddRequest = new PersonAddRequest()
             {
                 CountryID = countryResponse.CountryID,
-                PersonName = "John"
+                PersonName = "John",
+                Gender = GenderOptions.Male,
             };
             PersonResponse personResponse = _personService.AddPerson(personAddRequest);
 
@@ -418,5 +434,79 @@ namespace CRUD_Tests
             Assert.Equal(personResponse1.PersonName, personName.PersonName);
 
         }
+
+        #endregion UpdatePerson
+
+
+        #region DeletePerson
+
+        // DeletePerson with NullPersonID
+        [Fact]
+        public void DeletePerson_NullPersonID()
+        {
+            Guid? personID = null;
+
+            if(personID == null)
+            {
+                Assert.Null(personID);
+            }
+        }
+
+
+        // Delete Person with Valid PersonID
+        [Fact]
+        public void DeletePerson_ValidPersonID()
+        {
+            CountryAddRequest countryAddRequest = new CountryAddRequest()
+            {
+                CountryName = "UK"
+            };
+
+            CountryResponse countryResponse = _countriesService.AddCountry(countryAddRequest);
+
+
+            PersonAddRequest personAddRequest = new PersonAddRequest()
+            {
+                CountryID = countryResponse.CountryID,
+                PersonName = "John",
+                Gender = GenderOptions.Male,
+            };
+            PersonResponse personResponse = _personService.AddPerson(personAddRequest);
+
+            bool isDeleted = _personService.DeletePerson(personResponse.PersonID);
+
+            //Assert
+            Assert.True(isDeleted);
+        }
+
+
+        // Delete Person with InValid PersonID
+        [Fact]
+        public void DeletePerson_InvalidPersonID()
+        {
+            CountryAddRequest countryAddRequest = new CountryAddRequest()
+            {
+                CountryName = "UK"
+            };
+
+            CountryResponse countryResponse = _countriesService.AddCountry(countryAddRequest);
+
+
+            PersonAddRequest personAddRequest = new PersonAddRequest()
+            {
+                CountryID = countryResponse.CountryID,
+                PersonName = "John",
+                Gender = GenderOptions.Male,
+            };
+            PersonResponse personResponse = _personService.AddPerson(personAddRequest);
+
+            bool isDeleted = _personService.DeletePerson(Guid.NewGuid());
+
+            //Assert
+            Assert.False(isDeleted);
+        }
+
+        #endregion
+
     }
 }

@@ -1,6 +1,8 @@
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\bin\Debug\net8.0\Entities.dll
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
@@ -9,4 +11,5 @@ C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entit
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.dll
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
 C:\Users\raj.kumar\Documents\MVC\Harsha-MVC-2026\Entities\obj\Debug\net8.0\ref\Entities.dll

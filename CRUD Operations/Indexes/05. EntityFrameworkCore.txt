@@ -1,0 +1,8 @@
+﻿EntityFrameWork: 
+
+Entities should have: Microsoft.EntityFrameworkCore.Sql
+Entities should have: Microsoft.EntityFrameworkCore.Tools
+
+StartupProject should have: Microsoft.EntityFrameworkCore.Design
+
+------------

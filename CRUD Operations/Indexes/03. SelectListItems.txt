@@ -1,0 +1,20 @@
+﻿SelectListItems: Best for Select > Options 
+
+In Action Method-
+-------------------
+
+ViewBag.Items = new SelectListItem() { Text="Harsha", Value="1" }
+
+// real ex:
+List<CountryResponse> countries = _countriesService.GetAllCountries();
+ViewBag.Countries = countries.Select(tem => {
+	new SelectListItem() { Text = temp.CountryName, Value=temp.CountryID }
+});
+
+
+
+In .cshtml-
+----------------
+
+<select asp-for="CountryID" asp-items="@ViewBag.Countries" class="form-input">
+<option value="">Please Select</option>

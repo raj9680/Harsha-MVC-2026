@@ -1,0 +1,18 @@
+﻿Client Side Validation:
+
+
+1 -> Data Annotation & Model Property
+
+[Required]
+public DataType PropertyName { get; set; }
+
+
+  -> "data-*" attribute in html get implemented automatically if using above thing
+[auto-generated  with "asp-for" tag helper]
+
+
+2 -> Import jQuery Validations Scripts
+
+a). 1. https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+    2. https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js
+    3. https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js

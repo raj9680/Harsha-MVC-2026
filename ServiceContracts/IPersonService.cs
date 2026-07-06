@@ -10,13 +10,13 @@ namespace ServiceContracts
 {
     public interface IPersonService
     {
-        PersonResponse AddPerson(PersonAddRequest personAddRequest);
+        Task<PersonResponse> AddPerson(PersonAddRequest personAddRequest);
 
-        List<PersonResponse> GetAllPerson();
+        Task<List<PersonResponse>> GetAllPerson();
 
         PersonResponse GetPersonByID(Guid? PersonID);
 
-        List<PersonResponse> GetFilteredPersons(string searchBy, string? searchString);
+        Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString);
 
         /// <summary>
         /// Returns sorted list of persons
@@ -27,6 +27,12 @@ namespace ServiceContracts
         /// <returns>Returns list of persons after sorting as PersonResponse</returns>
         List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOrder);
 
-        PersonResponse PersonUpdate(PersonUpdateRequest personUpdateRequest);
+        Task<PersonResponse> PersonUpdate(PersonUpdateRequest personUpdateRequest);
+
+        /// <summary>
+        /// Deletes person based on the given person ID
+        /// </summary>
+        /// <param name="PersonID">Person ID is of Guid Type</param>
+        public Task<bool> DeletePerson(Guid? PersonID);
     }
 }

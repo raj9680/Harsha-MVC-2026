@@ -1,0 +1,58 @@
+﻿Stored Procedure: 
+
+1. Parameterless SP
+
+a). RAW SYNTAX:
+-----------
+    @"
+    CREATE PROCEDURE [dbo].[GetAllPersons]
+    AS BEGIN
+        SELECT PersonID, PersonName, Email, DateOfBirth, Gender, CountryID, Address, ReceiveNewsLetter FROM [dbo].[Persons]
+    END
+    ";
+
+
+b). Writing SP in Migration File:
+-----------------------------
+
+// SP will be created in DB (on Update Database)
+protected override void Up(MigrationBuilder migrationBuilder)
+{
+    string sp_GetAllPersons = @"
+    CREATE PROCEDURE [dbo].[GetAllPersons]
+    AS BEGIN
+        SELECT PersonID, PersonName, Email, DateOfBirth, Gender, CountryID, Address, ReceiveNewsLetter FROM [dbo].[Persons]
+    END
+    ";
+    migrationBuilder.Sql(sp_GetAllPersons);
+}
+
+
+// SP Will be deleted from DB (on remove migration)
+protected override void Down(MigrationBuilder migrationBuilder)
+{
+    // DROP Stored Procedure - Remove Migration
+    string sp_GetAllPersons = @"
+        DROP PROCEDURE [dbo].[GetAllPersons]
+    ";
+    migrationBuilder.Sql(sp_GetAllPersons);
+}
+
+
+c). Create a method in dbContext file below OnModelCreating method - this method will call SP of DB
+----------------------------------------------------------------------------------------------------
+public List<Person> sp_GetAllPersons()
+{
+    return Persons.FromSqlRaw("Execute [dbo].[GetAllPersons]").ToList();
+}
+
+
+d). Call sp_GetAllPerson SP from Action Method from Controller
+--------------------------------------------------------------
+public List<PersonResponse> GetAllPerson()      
+{        
+    return _dbContext.sp_GetAllPersons().Select(temp => ConvertPersonToPersonResponse(temp)).ToList();
+}
+
+
+

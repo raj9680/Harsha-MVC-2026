@@ -1,0 +1,31 @@
+﻿1. Tag Helpers: Tag helpers are the classes that can be invoked as an html
+tag or html attribute.
+
+ex:
+<input asp-for="ModelProperty">
+			|
+<input type="text" name="ModelProperty" id="ModelProperty" value="ModelValue">
+
+--
+
+2. List of Tag Helpers:
+1. For Anchor
+a). asp-controller
+b). asp-action
+c). asp-route-x
+d). asp-route
+e). asp-area
+
+2. For Input
+a). asp-for
+
+3). For Select
+a). asp-for
+b). asp-items
+
+--
+
+3. Advantages of Tag Helpers
+The forms tag such as input, label, textarea, select etc. can bound with 
+specific model peoperty name to "name" & "id" attributes of input tag.
+

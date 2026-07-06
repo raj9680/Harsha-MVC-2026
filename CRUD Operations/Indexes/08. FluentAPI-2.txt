@@ -1,0 +1,33 @@
+﻿Fluent API: Adding Constraint to DB using Fluent API
+
+// 1
+public class CustomDbContext: DbContext 
+{
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+     {
+        // Adds database index for the specified column for faster searches
+        modelBuilder.Entity<ModelClass>().HasIndex("column_name").IsUniue();
+
+        // Adds check constraints for the specified column - that executes for insert & update
+        modelBuilder.Entity<ModelClass>().HasCheckConstraint("constraint_name", condition");
+     }
+}
+
+
+// 2 - Very Imp
+public class CustomDbContext: DbContext 
+{
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+     {
+        modelBuilder.Entity<ModelClass>().Property(temp => temp.PropertyName)
+            .HasColumnName("column_name") // Specifies column name in table
+            .HasColumnType("data_type") // Specifies column data type in table
+            .HasColumnValue("default_value") // Specifies default value of the column
+
+        // Example:
+        modelBuilder.Entity<Person>().Property(temp => temp.TIN)
+            .HasColumnName("TaxIdentificationNumber")
+            .HasColumnType("varchar(8)")
+            .HasColumnValue("TIN00") // Specifies default value of the column
+     }
+}
